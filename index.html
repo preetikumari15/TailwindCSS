@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeAnt AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white flex items-center justify-center min-h-screen">
+
+  <div class="w-full h-screen flex flex-col lg:flex-row">
+    <!-- Left Section -->
+    
+      <div class="w-full lg:w-1/2 bg-white border-[#E9EAEB] flex items-center justify-center">
+        <img src="Images/Group 37111.png" alt="" class="w-[474px] h-[322px]">
+      </div>
+      <div>
+        <img src="Images/Subtract.png" alt="">
+      </div>
+    
+
+    <!-- Right Section -->
+     <div class=" bg-[#FAFAFA] w-full lg:w-1/2 flex flex-col justify-center items-center p-8">
+     <div class="bg-white w-[672px] h-[602.34px] p-[24px]">
+      <div class="flex justify-center mb-6">
+        <img src="Images/Date and text.png" alt="CodeAnt AI Logo" class="h-[124px] w-[624px] ">
+      </div>
+     
+      <div class="flex justify-center mb-4">
+        <button id="saasButton" class="w-[311px] h-[60px] px-[14px] py-[14px] bg-[#FAFAFA] hover:bg-[#1570EF] text-[#414651] hover:text-white rounded-l-lg font-[600px] text-[20px] font-semibold border-[2px] ">SAAS</button>
+        <button id="selfHostedButton" class="w-[311px] h-[60px] px-[14px] py-[14px] bg-[#FAFAFA] hover:bg-[#1570EF] text-[#414651] hover:text-white rounded-l-lg font-[600px] text-[20px] font-semibold border-[2px] ">Self Hosted</button>
+      </div>
+      <div id="saasOptions" class="space-y-4 px-[110px] py-[16px]">
+        <button class="w-[446px] px-4 py-2 bg-white border-[#D8DAE5] border-[1px] rounded-lg text-left flex justify-center item-center">
+          <img src="Images/github.png" alt="GitHub" class="w-[25px] h-[25.59px] mr-3">
+          <span  class="text-black font-semibold">Sign in with GitHub</span>
+        </button>
+        <button class="w-[446px] px-4 py-2 bg-white border-[#D8DAE5] border-[1px] rounded-lg text-left flex justify-center items-center">
+          <img src="Images/bucket.png" alt="BitBucket" class="w-[25px] h-[25.59px] mr-3">
+          <span  class="text-black font-semibold">Sign in with Bitbucket</span>
+        </button>
+        <button class="w-[446px] px-4 py-2 bg-white border-[#D8DAE5] border-[1px] rounded-lg text-left flex justify-center item-center">
+          <img src="Images/azure.png" alt="Azure DevOps" class="w-[25px] h-[25.59px] mr-3">
+          <span  class="text-black font-semibold">Sign in with Azure DevOps</span>
+        </button>
+        <button class="w-[446px] px-4 py-2 bg-white border-[#D8DAE5] border-[1px] rounded-lg text-left flex justify-center items-center">
+          <img src="Images/gitlab.png" alt="GitLab" class="w-[25px] h-[25.59px] mr-3">
+          <span class="text-black font-semibold">Sign in with GitLab</span>
+        </button>
+      </div>
+      <div id="selfHostedOptions" class="space-y-4 px-[110px] py-[16px] hidden">
+        <button class="w-[446px] px-4 py-2 bg-white border-[#D8DAE5] border-[1px] rounded-lg text-left flex justify-center items-center">
+          <img src="Images/gitlab.png" alt="GitLab" class="w-[25px] h-[25.59px] mr-3">
+          <span class="text-black font-semibold">Self Hosted GitLab</span>
+        </button>
+        <button class="w-[446px] px-4 py-2 bg-white border-[#D8DAE5] border-[1px] rounded-lg text-left flex justify-center items-center">
+          <img src="Images/sso.png" alt="SSO" class="w-[25px] h-[25.59px] mr-3">
+          <span class="text-black font-semibold">Sign in with SSO</span>
+        </button>
+      </div>
+      
+    </div>
+    <p class="text-sm text-center mt-6 text-gray-500">
+      By signing up, you agree to the <a href="#" class="text-blue-500 underline">Privacy Policy</a>.
+    </p>
+  </div>
+ 
+</div>
+
+  
+  <script src="app.js"></script>
+</body>
+</html>
