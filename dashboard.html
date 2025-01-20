@@ -65,17 +65,46 @@
     </aside>
     
     <!-- Main Content -->
-    <main class="flex-1 bg-[#F8F9FA] text-black p-8 overflow-y-auto">
-      <div class="flex justify-between items-center">
-        <h1 class="text-xl font-semibold">Repositories</h1>
-        <button class="bg-blue-500 text-white px-4 py-2 rounded-lg flex items-center">
-          <span class="material-icons mr-2">add</span>
-          Add Repository
-        </button>
+    <main class="flex-1 bg-[#FAFAFA] text-black p-8 overflow-y-auto">
+    <div class="w-[1150px] h-[912px] border-[1px] bg-white border-[#E9EAEB] rounded-lg">
+      <div class="p-6 bg-white border-[1px] border-[#E9EAEB]">
+        <!-- Header Section -->
+        <div class="flex justify-between items-center">
+          <div>
+            <h1 class="text-2xl font-[600] w-[146px] h-[32px] ">Repositories</h1>
+            <p class="w-[134px] h-[20px] font-[400] text-[14px] ">33 total repositories</p>
+          </div>
+         <div class="flex w-[297px] h-[40px] space-x-3">
+          <button class="text-[#414651] px-[14px] py-[10px] rounded-lg flex items-center border-[1px] border-[#D5D7DA] w-[127px] h-[40px] whitespace-nowrap">
+            <img src="Images/refresh.png" alt="" class="w-[16.91px] h-[16.88px] text-[#414651] mr-3">
+            <span>Refresh All</span>
+          </button>
+          
+          <button class="bg-[#1570EF] text-white px-[14px] py-[10px] rounded-lg flex items-center hover:bg-blue-600 w-[158px] h-[40px] whitespace-nowrap">
+            <img src="Images/plus.png" alt="" class="w-[14.63px] h-[14.63px] text-white mr-3">
+            <span class="w-full">Add Repository</span>
+          </button>
+          
+        </div>
       </div>
-      <div class="mt-4">
-        <input type="text" class="border p-2 w-full rounded-lg" placeholder="Search Repositories">
+        
+        <!-- Search Input Section -->
+        <div class="mt-4 relative">
+          <input
+            type="text"
+            class="border-[1px] border-[#D5D7DA] p-2 pl-10 w-[366px] h-[44px] rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+            placeholder="Search Repositories"
+          />
+          <img
+            src="Images/search.png"
+            alt="Search"
+            class="absolute top-1/2 left-3 transform -translate-y-1/2 w-5 h-5 text-gray-400"
+          />
+        </div>
+        
       </div>
+      
+      
       <div class="mt-6">
         <ul class="space-y-4">
           <li class="p-4 bg-white rounded-lg flex justify-between items-center shadow-md">
@@ -94,6 +123,7 @@
           </li>
           <!-- Repeat for other repositories -->
         </ul>
+      </div>
       </div>
     </main>
   </div>
