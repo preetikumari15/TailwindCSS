@@ -20,3 +20,15 @@ selfHostedButton.addEventListener("click", () => {
   saasButton.classList.add("bg-gray-100", "text-gray-600");
   saasButton.classList.remove("bg-blue-500", "text-white");
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const saasGitHubButton = document.querySelector("#saasOptions button:first-child");
+  const selfHostedGitHubButton = document.querySelector("#selfHostedOptions button:first-child");
+
+  const redirectToDashboard = () => {
+    window.location.href = "dashboard.html"; // Replace with the actual path to the dashboard page.
+  };
+
+  saasGitHubButton.addEventListener("click", redirectToDashboard);
+  selfHostedGitHubButton.addEventListener("click", redirectToDashboard);
+});
