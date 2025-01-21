@@ -8,11 +8,11 @@
 </head>
 <body class="bg-[#121212] text-white">
   <div class="lg:flex h-screen ">
-    <div class="lg:hidden bg-white px-4 py-3 flex justify-between items-center relative">
-      <!-- Logo -->
+    <div class="lg:hidden md:w-[440px] bg-white px-4 py-3 flex justify-between items-center relative">
+  
       <img src="Images/Frame 9.png" alt="CodeAnt AI Logo" class="w-[408px] h-[32px] mt-2">
     
-      <!-- Hamburger Menu / Close Button -->
+      <!-- Toggle Menu / Close Button -->
       <button id="menuToggle" class="flex flex-col items-center justify-center space-y-1 z-50">
         <span id="menuIcon" class="block w-6 h-0.5 bg-black transition-all duration-300"></span>
         <span id="menuIconMiddle" class="block w-6 h-0.5 bg-black transition-all duration-300"></span>
@@ -21,17 +21,17 @@
     </div>
     
     <!-- Dropdown Menu -->
-    <div id="mobileMenu" class="hidden bg-white shadow-lg absolute top-[60px] left-0 w-full z-40">
-      <div class="flex py-4 px-4 h-[456px]">
-        <!-- Dropdown Header -->
-        <div class=" items-center justify-between border-b pb-2 space-y-4">
+    <div id="mobileMenu" class="hidden bg-white shadow-lg absolute top-[60px] left-0 z-40 md:w-[440px]">
+      <div class="flex py-4 px-4 md:w-[440px] h-[456px]">
+        
+        <div class=" items-center justify-between border-b pb-2 space-y-4 ">
           
           <img src="Images/Input dropdown.png" alt="Dropdown Icon" class="space-y-4 px-3">
         
     
         <!-- Menu Links -->
         <ul class="space-y-6 px-5 py-2">
-          <!-- List items same as before -->
+      
           <li class="flex items-center space-x-2 hover:bg-slate-100">
             <img src="Images/home.png" alt="Repositories" class="w-5 h-5">
             <a href="#" class="text-[#414651]">Repositories</a>
@@ -124,7 +124,7 @@
     
     <!-- Main Content -->
     <main class="h-[924px] lg:flex-1 lg:bg-[#FAFAFA] text-black lg:p-8 lg:overflow-y-auto lg:w-[1198px] lg:h-[960px] lg:p-[24px] ">
-    <div class="h-[924px] lg:h-[912px] border-[1px] bg-white border-[#E9EAEB] lg:rounded-lg  gap-0.5">
+    <div class="md:w-[440px] h-[924px] lg:w-[1198px] lg:h-[912px] border-[1px] bg-white border-[#E9EAEB] lg:rounded-lg  gap-0.5">
       <div class="p-6 bg-white border-[1px] border-[#E9EAEB] ">
         <!-- Header Section -->
         <div class="lg:flex justify-between items-center space-y-4">
