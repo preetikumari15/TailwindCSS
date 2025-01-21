@@ -7,18 +7,76 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-[#121212] text-white">
-  <div class="flex h-screen">
-    <!-- Sidebar -->
-    <aside class="bg-white text-black w-[242px] h-[960px] p-4 space-y-5">
-      <div class="flex items-center space-x-4">
-        <img src="Images/Header.png" alt="" class="-[242px] h-[92px] px-[2xl] py-[2xl]">
+  <div class="lg:flex h-screen ">
+    <div class="lg:hidden bg-white px-4 py-3 flex justify-between items-center relative">
+      <!-- Logo -->
+      <img src="Images/Frame 9.png" alt="CodeAnt AI Logo" class="w-[408px] h-[32px] mt-2">
+    
+      <!-- Hamburger Menu / Close Button -->
+      <button id="menuToggle" class="flex flex-col items-center justify-center space-y-1 z-50">
+        <span id="menuIcon" class="block w-6 h-0.5 bg-black transition-all duration-300"></span>
+        <span id="menuIconMiddle" class="block w-6 h-0.5 bg-black transition-all duration-300"></span>
+        <span id="menuIconBottom" class="block w-6 h-0.5 bg-black transition-all duration-300"></span>
+      </button>
+    </div>
+    
+    <!-- Dropdown Menu -->
+    <div id="mobileMenu" class="hidden bg-white shadow-lg absolute top-[60px] left-0 w-full z-40">
+      <div class="flex py-4 px-4 h-[456px]">
+        <!-- Dropdown Header -->
+        <div class=" items-center justify-between border-b pb-2 space-y-4">
+          
+          <img src="Images/Input dropdown.png" alt="Dropdown Icon" class="space-y-4 px-3">
+        
+    
+        <!-- Menu Links -->
+        <ul class="space-y-6 px-5 py-2">
+          <!-- List items same as before -->
+          <li class="flex items-center space-x-2 hover:bg-slate-100">
+            <img src="Images/home.png" alt="Repositories" class="w-5 h-5">
+            <a href="#" class="text-[#414651]">Repositories</a>
+          </li>
+          <li class="flex items-center space-x-2 hover:bg-slate-100">
+            <img src="Images/code.png" alt="AI Code Review" class="w-5 h-5">
+            <a href="#" class="text-[#414651]">AI Code Review</a>
+          </li>
+          <li class="flex items-center space-x-2 hover:bg-slate-100">
+            <img src="Images/cloud.png" alt="Cloud Security" class="w-5 h-5">
+            <a href="#" class="text-[#414651]">Cloud Security</a>
+          </li>
+          <li class="flex items-center space-x-2 hover:bg-slate-100">
+            <img src="Images/book.png" alt="How to Use" class="w-5 h-5">
+            <a href="#" class="text-[#414651]">How to Use</a>
+          </li>
+          <li class="flex items-center space-x-2 hover:bg-slate-100">
+            <img src="Images/gear.png" alt="Settings" class="w-5 h-5">
+            <a href="#" class="text-[#414651]">Settings</a>
+          </li>
+          <li class="flex items-center space-x-2 hover:bg-slate-100">
+            <img src="Images/phone.png" alt="Support" class="w-5 h-5">
+            <a href="#" class="text-[#414651]">Support</a>
+          </li>
+          <li class="flex items-center space-x-2 hover:bg-slate-100">
+            <img src="Images/sign-out.png" alt="Logout" class="w-5 h-5">
+            <a href="#" class="text-[#414651]">Logout</a>
+          </li>
+        </ul>
       </div>
-      <ul class="space-y-2 w-[242px] h-[224px] ">
+      </div>
+    </div>
+    
+    <!-- Sidebar -->
+    <aside class="hidden lg:flex lg:flex-col lg:bg-white text-black lg:w-[242px] lg:h-[960px] p-4 space-y-5">
+      <div class="flex items-center space-x-4">
+    
+        <img src="Images/Header.png" alt="Header" class="w-[242px] h-[92px]">
+      </div>
+      <ul class="space-y-2 w-[242px] h-[224px]">
         <li class="flex items-center space-x-2">
-        <button class="w-[210px] px-4 py-2 bg-[#1570EF] border-[2px] rounded-lg text-left flex justify-center item-center ">
-          <img src="Images/home.png" alt="" class="w-[20.24px] h-[17.97px] text-[#414651] mr-3 mt-0.5">
-          <span class="text-white w-[97px] h-[24px] text-md font-semibold font-[600] ">Repositories</span>
-        </button>
+          <button class="w-[210px] px-4 py-2 bg-[#1570EF] border-[2px] rounded-lg text-left flex justify-center items-center">
+            <img src="Images/home.png" alt="Home Icon" class="w-[20.24px] h-[17.97px] text-[#414651] mr-3 mt-0.5">
+            <span class="text-white w-[97px] h-[24px] text-md font-semibold font-[600]">Repositories</span>
+          </button>
         </li>
         <li class="flex items-center space-x-4">
           <button class="w-[210px] h-[40px] px-4 bg-white text-left flex justify-center item-center ">
@@ -65,12 +123,12 @@
     </aside>
     
     <!-- Main Content -->
-    <main class="flex-1 bg-[#FAFAFA] text-black p-8 overflow-y-auto w-[1198px] h-[960px] p-[24px] ">
-    <div class=" h-[912px] border-[1px] bg-white border-[#E9EAEB] rounded-lg h-[156px] gap-0.5">
+    <main class="h-[924px] lg:flex-1 lg:bg-[#FAFAFA] text-black lg:p-8 lg:overflow-y-auto lg:w-[1198px] lg:h-[960px] lg:p-[24px] ">
+    <div class="h-[924px] lg:h-[912px] border-[1px] bg-white border-[#E9EAEB] lg:rounded-lg  gap-0.5">
       <div class="p-6 bg-white border-[1px] border-[#E9EAEB] ">
         <!-- Header Section -->
-        <div class="flex justify-between items-center">
-          <div>
+        <div class="lg:flex justify-between items-center space-y-4">
+          <div >
             <h1 class="text-2xl font-[600] w-[146px] h-[32px] ">Repositories</h1>
             <p class="w-[134px] h-[20px] font-[400] text-[14px] ">33 total repositories</p>
           </div>
@@ -259,6 +317,29 @@
       </div>
     </main>
   </div>
-  <script src="app.js"></script>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+  const menuToggle = document.getElementById("menuToggle");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const menuIcon = document.getElementById("menuIcon");
+  const menuIconMiddle = document.getElementById("menuIconMiddle");
+  const menuIconBottom = document.getElementById("menuIconBottom");
+
+  menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+
+    // icon to cross 
+    menuIcon.classList.toggle("rotate-45");
+    menuIcon.classList.toggle("translate-y-1.5");
+
+    menuIconMiddle.classList.toggle("opacity-0");
+
+    menuIconBottom.classList.toggle("-rotate-45");
+    menuIconBottom.classList.toggle("-translate-y-1.5");
+  });
+});
+
+  </script>
 </body>
 </html>
